@@ -295,7 +295,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Picada de carne\",\r\n  \"stock\": 100\r\n}\r\n",
+					"raw": "{\r\n  \"name\": \"Picada de cerdo\",\r\n  \"stock\": 100\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
