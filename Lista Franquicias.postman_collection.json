@@ -109,7 +109,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Crepe familiar\",\r\n  \"stock\": 100\r\n}\r\n",
+					"raw": "{\r\n  \"name\": \"Crepe personal\",\r\n  \"stock\": 200\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,7 +117,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/v1/franchises/Crepes and Wafles/branches/Soacha/products/Crepe familiar/stock",
+					"raw": "http://localhost:8081/api/v1/franchises/Cream Helado/branches/Soacha/products/Crepe familiar/stock",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -127,7 +127,7 @@
 						"api",
 						"v1",
 						"franchises",
-						"Crepes and Wafles",
+						"Cream Helado",
 						"branches",
 						"Soacha",
 						"products",
@@ -295,7 +295,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Picada de pollo\",\r\n  \"stock\": 100\r\n}\r\n",
+					"raw": "{\r\n  \"name\": \"Picada de carne\",\r\n  \"stock\": 100\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -303,7 +303,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/v1/franchises/KFC/branches/Fontibon/products/Cubeta pollo/stock",
+					"raw": "http://localhost:8081/api/v1/franchises/KFC/branches/Fontibon/products/Picada de pollo/name",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -317,8 +317,8 @@
 						"branches",
 						"Fontibon",
 						"products",
-						"Cubeta pollo",
-						"stock"
+						"Picada de pollo",
+						"name"
 					]
 				}
 			},
