@@ -1,17 +1,13 @@
 package com.api.franchise.application;
 
-import com.api.franchise.application.FranchiseService;
+import com.api.franchise.application.dto.ProductBranchDTO;
 import com.api.franchise.domain.model.Branch;
 import com.api.franchise.domain.model.Franchise;
 import com.api.franchise.domain.model.Product;
-import com.api.franchise.infraestructure.FranchiseServiceImpl;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/api/v1/franchises")
@@ -40,15 +36,34 @@ public class FranchiseController {
         return franchiseService.removeProductFromBranch(franchiseName, branchName, productName);
     }
 
-    @PutMapping("/{franchiseName}/branches/{branchName}/products/{productName}")
+    @PutMapping("/{franchiseName}/branches/{branchName}/products/{productName}/stock")
     public Mono<Product> updateProductStock(@PathVariable String franchiseName, @PathVariable String branchName, @PathVariable String productName, @RequestBody Product updatedProduct) {
         return franchiseService.updateProductStock(franchiseName, branchName, productName, updatedProduct);
     }
 
+    @PutMapping("/{franchiseName}")
+    public Mono<Franchise> updateFranchiseName(@PathVariable String franchiseName, @RequestBody Franchise updatedFranchise) {
+        return franchiseService.updateFranchiseName(franchiseName, updatedFranchise.getName());
+    }
+
+    @PutMapping("/{franchiseName}/branches/{branchName}")
+    public Mono<Branch> updateBranchName(@PathVariable String franchiseName, @PathVariable String branchName, @RequestBody Branch updatedBranch) {
+        return franchiseService.updateBranchName(franchiseName, branchName, updatedBranch.getName());
+    }
+
+    @PutMapping("/{franchiseName}/branches/{branchName}/products/{productName}/name")
+    public Mono<Product> updateProductName(@PathVariable String franchiseName, @PathVariable String branchName, @PathVariable String productName, @RequestBody Product updatedProduct) {
+        return franchiseService.updateProductName(franchiseName, branchName, productName, updatedProduct.getName());
+    }
 
     @GetMapping
     public Flux<Franchise> getAllFranchises() {
         return franchiseService.getAllFranchises();
+    }
+
+    @GetMapping("/{franchiseName}/products")
+    public Flux<ProductBranchDTO> getProductsStocks(@PathVariable String franchiseName){
+        return franchiseService.getProductsStocks(franchiseName);
     }
 }
 

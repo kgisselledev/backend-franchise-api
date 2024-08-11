@@ -1,0 +1,117 @@
+[{
+  "_id": {
+    "$oid": "66b9042edb58cf1fdcaf31bf"
+  },
+  "name": "Cream Helado",
+  "branches": [
+    {
+      "name": "Soacha",
+      "products": [
+        {
+          "name": "Crepe familiar",
+          "stock": 100
+        }
+      ]
+    }
+  ],
+  "_class": "com.api.franchise.domain.model.Franchise"
+},
+{
+  "_id": {
+    "$oid": "66b90bf7db58cf1fdcaf31c0"
+  },
+  "name": "KFC",
+  "branches": [
+    {
+      "name": "Fontibon",
+      "products": [
+        {
+          "name": "Cubeta pollo",
+          "stock": 100
+        }
+      ]
+    }
+  ],
+  "_class": "com.api.franchise.domain.model.Franchise"
+},
+{
+  "_id": {
+    "$oid": "66b90c58db58cf1fdcaf31c1"
+  },
+  "name": "Cali Vea",
+  "branches": [
+    {
+      "name": "Usaquen",
+      "products": [
+        {
+          "name": "Pollo asado familiar",
+          "stock": 400
+        }
+      ]
+    }
+  ],
+  "_class": "com.api.franchise.domain.model.Franchise"
+},
+{
+  "_id": {
+    "$oid": "66b90c9edb58cf1fdcaf31c2"
+  },
+  "name": "El Corral",
+  "branches": [
+    {
+      "name": "Engativa",
+      "products": [
+        {
+          "name": "Hamburguesa triple",
+          "stock": 50
+        }
+      ]
+    }
+  ],
+  "_class": "com.api.franchise.domain.model.Franchise"
+},
+{
+  "_id": {
+    "$oid": "66b90d02db58cf1fdcaf31c3"
+  },
+  "name": "Frisby",
+  "branches": [
+    {
+      "name": "Chapinero",
+      "products": [
+        {
+          "name": "Hamburguesa de pollo",
+          "stock": 250
+        }
+      ]
+    },
+    {
+      "name": "Usme",
+      "products": [
+        {
+          "name": "Un pollo broaster",
+          "stock": 100
+        }
+      ]
+    },
+    {
+      "name": "Bosa",
+      "products": [
+        {
+          "name": "Ramo de pollo",
+          "stock": 10
+        }
+      ]
+    },
+    {
+      "name": "Soacha",
+      "products": [
+        {
+          "name": "Hamburguesa junior",
+          "stock": 5
+        }
+      ]
+    }
+  ],
+  "_class": "com.api.franchise.domain.model.Franchise"
+}]

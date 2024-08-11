@@ -1,10 +1,8 @@
 package com.api.franchise.domain.model;
 
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.List;
-//@Document(collection = "branches")
+
 public class Branch {
     private String name;
     private List<Product> products;
