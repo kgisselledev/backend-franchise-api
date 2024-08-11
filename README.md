@@ -19,7 +19,7 @@ DockerHub: https://hub.docker.com/layers/luna10/api-franchise/latest/images/sha2
 
 # Instalación
 
-1. Clonar el repositorio con el comando: git clone [https://github.com/kgisselledev/employees-service-api.git](https://github.com/kgisselledev/backend-franchise-api.git)
+1. Clonar el repositorio con el comando: git clone https://github.com/kgisselledev/backend-franchise-api.git
 2. Acceder al directorio con: backend-franchise-api
 3. Compilar el proyecto con la consola en Maven: mvn clean package
 4. Construir la imagen Docker en la consola: docker build -t franchise-api:latest .
