@@ -37,7 +37,7 @@ DockerHub: https://hub.docker.com/layers/luna10/api-franchise/latest/images/sha2
 2. Seleccionar el archivo Lista Franquicias.postman_collection.json y se importa la colección
 
 # Endpoints
-1. Crear franquicia:
+# 1. Crear franquicia:
    POST: /api/v1/franchises
    request:
    {
@@ -45,7 +45,7 @@ DockerHub: https://hub.docker.com/layers/luna10/api-franchise/latest/images/sha2
       "branches": []
     }
 
-2. Crear Sucursal:
+# 2. Crear Sucursal:
    POST: /api/v1/franchises/{franchiseName}/branches
    request:
    {
@@ -53,7 +53,7 @@ DockerHub: https://hub.docker.com/layers/luna10/api-franchise/latest/images/sha2
   "products": []
   }
 
-3. Crear producto en Sucursal:
+# 3. Crear producto en Sucursal:
 POST: /api/v1/franchises/{franchiseName}/branches/{branchName}/products
    request:
    {
@@ -61,20 +61,20 @@ POST: /api/v1/franchises/{franchiseName}/branches/{branchName}/products
   "stock": 5
 }
 
-4. Modificar nombre de Franquicia:
+# 4. Modificar nombre de Franquicia:
    PUT: /api/v1/franchises/{franchiseName}
    request:
    {
   "name": "Cream Helado"
   }
 
-5. Modificar nombre de Sucursal:
+# 5. Modificar nombre de Sucursal:
     PUT: /api/v1/franchises/{franchiseName}/branches/{branchName}
    request:
    {
   "name": "Fontibon"
   }
-6. Modificar nombre de Producto:
+# 6. Modificar nombre de Producto:
    PUT: /api/v1/franchises/{franchiseName}/branches/{branchName}/stock
    request:
   {
@@ -82,7 +82,7 @@ POST: /api/v1/franchises/{franchiseName}/branches/{branchName}/products
   "stock": 200
 }
 
-7. Modificar stock de Producto:
+# 7. Modificar stock de Producto:
     PUT: /api/v1/franchises/{franchiseName}/branches/{branchName}/name
    request:
   {
@@ -90,11 +90,11 @@ POST: /api/v1/franchises/{franchiseName}/branches/{branchName}/products
   "stock": 100
 }
 
-8. Listar productos con mayor stock por sucursal:
+# 8. Listar productos con mayor stock por sucursal:
     GET: /api/v1/franchises/{franchiseName}/products
-9. Listar franquicias:
+# 9. Listar franquicias:
    GET: /api/v1/franchises/
-10. Eliminar producto:
+# 10. Eliminar producto:
     DELETE: /api/v1/franchises/{franchiseName}/branches/{branchName}/products/{productName}
 
 
